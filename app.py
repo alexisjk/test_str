@@ -13,7 +13,7 @@ from langchain.callbacks import get_openai_callback
 def main():
     load_dotenv()
     print(os.getenv("OPENAI_API_KEY"))
-    hide=""" <style>#MainMenu { visibility:hidden;} </style>"""
+    hide=""" <style>header { visibility:hidden;} </style>"""
     # st.set_page_config(page_title="Ask your PDF")
     st.markdown(hide,unsafe_allow_html=True)
     st.header("Ask your PDF 💬")
